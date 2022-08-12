@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Database1DataSet1" targetNamespace="http://tempuri.org/Database1DataSet1.xsd" xmlns:mstns="http://tempuri.org/Database1DataSet1.xsd" xmlns="http://tempuri.org/Database1DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Database1ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Database1ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Yahoo.Properties.Settings.GlobalReference.Default.Database1ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DoctorPatientsTableAdapter" GeneratorDataComponentClassName="DoctorPatientsTableAdapter" Name="DoctorPatients" UserDataComponentName="DoctorPatientsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Database1ConnectionString (Settings)" DbObjectName="dbo.DoctorPatients" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Patients FROM dbo.DoctorPatients</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Patients" DataSetColumn="Patients" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Database1DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="Database1DataSet1" msprop:Generator_UserDSName="Database1DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DoctorPatients" msprop:Generator_TableClassName="DoctorPatientsDataTable" msprop:Generator_TableVarName="tableDoctorPatients" msprop:Generator_TablePropName="DoctorPatients" msprop:Generator_RowDeletingName="DoctorPatientsRowDeleting" msprop:Generator_RowChangingName="DoctorPatientsRowChanging" msprop:Generator_RowEvHandlerName="DoctorPatientsRowChangeEventHandler" msprop:Generator_RowDeletedName="DoctorPatientsRowDeleted" msprop:Generator_UserTableName="DoctorPatients" msprop:Generator_RowChangedName="DoctorPatientsRowChanged" msprop:Generator_RowEvArgName="DoctorPatientsRowChangeEvent" msprop:Generator_RowClassName="DoctorPatientsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Patients" msprop:Generator_ColumnVarNameInTable="columnPatients" msprop:Generator_ColumnPropNameInRow="Patients" msprop:Generator_ColumnPropNameInTable="PatientsColumn" msprop:Generator_UserColumnName="Patients">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
